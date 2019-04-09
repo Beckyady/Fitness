@@ -1,0 +1,8 @@
+.fitness {
+    width: 100%;
+    height: 100vh;
+    background-image: url('src/assets/image/bg.svg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}

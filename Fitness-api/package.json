@@ -1,0 +1,18 @@
+{
+  "name": "fitness-api",
+  "version": "1.0.0",
+  "description": "This is the api for Fitness app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "^2.8.5",
+    "express": "*",
+    "mongoose": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rebecca Adeyeye",
+  "license": "ISC"
+}

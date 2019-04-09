@@ -1,0 +1,45 @@
+ 
+ 
+<div class="flexSign">
+  <img src="assets/image/papa.svg" id="papa" width= "2200px" height = "600px"/>
+  <div class="container">
+      <p class = "h1">Welcome back!</p>
+      <form [formGroup]="loginForm">
+         <!-- Email -->
+         <input type="text" placeholder="Your Email" formControlName="email" class="form-control" />
+         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+             <label *ngIf="f.email.errors.required">Email is required</label>
+             <label *ngIf="f.email.errors.email">Email must be a valid email address</label>
+         </div>
+       <br>
+
+ <!-- Password -->
+ <input type="password" placeholder="Password" formControlName="password" class="form-control"  />
+ <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+     <label *ngIf="f.password.errors.required">Password is required</label>
+     <label *ngIf="f.password.errors.minlength">Password must be at least 6 characters</label>
+ </div>
+
+ <br>
+ <input
+                (click)="login()"
+                class="registerbtn"  
+                type="submit" 
+                value = "Sign in"
+               
+                 >
+                
+
+    <br>
+
+   <p class="h2">Not yet in the team? <a routerLinkActive = "/sign-up">Sign up</a></p>   
+   
+         </form> 
+        
+    </div>
+  
+
+
+</div>
+    
+     <!--[disabled] = "registerForm.pristine || registerForm.invalid"-->

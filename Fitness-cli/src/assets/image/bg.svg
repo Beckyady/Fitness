@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_4);
+      }
+
+      .cls-2, .cls-8 {
+        fill: #0d0d0d;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        fill: #d45f08;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #e67e30;
+      }
+
+      .cls-5 {
+        opacity: 0.29;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_4">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_4" data-name="Web 1920 – 4" class="cls-1">
+    <rect class="cls-8" width="1920" height="1080"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" class="cls-2">
+      <rect class="cls-6" width="1950" height="1080"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="1949" height="1079"/>
+    </g>
+    <g id="Rectangle_11" data-name="Rectangle 11" class="cls-2">
+      <rect class="cls-6" width="1950" height="1080"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="1949" height="1079"/>
+    </g>
+    <g id="Symbol_1_1" data-name="Symbol 1 – 1">
+      <g id="Ellipse_1" data-name="Ellipse 1" class="cls-3" transform="translate(-727 -238)">
+        <circle class="cls-6" cx="798" cy="798" r="798"/>
+        <circle class="cls-7" cx="798" cy="798" r="797.5"/>
+      </g>
+      <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-4" cx="657" cy="657" r="657" transform="translate(-586 -97)"/>
+    </g>
+    <g id="Symbol_1_2" data-name="Symbol 1 – 2" transform="translate(0 -20)">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" class="cls-3" transform="translate(-727 -238)">
+        <circle class="cls-6" cx="798" cy="798" r="798"/>
+        <circle class="cls-7" cx="798" cy="798" r="797.5"/>
+      </g>
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" class="cls-4" cx="657" cy="657" r="657" transform="translate(-586 -97)"/>
+    </g>
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-5" cx="214" cy="214" r="214" transform="translate(1130 424)"/>
+  </g>
+</svg>

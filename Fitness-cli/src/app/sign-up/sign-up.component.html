@@ -1,0 +1,66 @@
+<div class="flexSign">
+    <img src="assets/image/mama.svg" id="mama" width= "2200px" height = "600px"/>
+    <div class="container">
+        <p class = "h1">Join the winning team</p>
+        
+        <form  [formGroup] = "registerForm" novalidate>
+                
+            <!-- Full name -->
+            <input type="text" placeholder="Enter Your Full Name" formControlName="fullName" class="form-control" />
+        <div *ngIf="registerForm.controls['fullName'].invalid && (registerForm.controls['fullName'].dirty || registerForm.controls['fullName'].touched)" class="alert-danger">
+        <label *ngIf="registerForm.controls['fullName'].errors.required">Full Name is required</label>
+                        </div>
+
+                         
+                <!-- Email -->
+            <input type="text" placeholder="Your Email" formControlName="email" class="form-control" />
+            <div  *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)" class="alert-danger">
+                <label *ngIf="registerForm.controls['email'].errors.required">Email is required</label>
+                <label *ngIf="registerForm.controls['email'].errors.email">Email must be a valid email address</label>
+            </div>
+                 
+                 <!-- Phone number -->
+                
+            <input type="text" placeholder="Enter Your Phone Number" formControlName="phoneNumber" class="form-control" />
+            <div *ngIf="registerForm.controls['phoneNumber'].invalid && (registerForm.controls['phoneNumber'].dirty || registerForm.controls['phoneNumber'].touched)" class="alert-danger">
+                <label *ngIf="registerForm.controls['phoneNumber'].errors.required"> Phone Number is required</label>
+                <label *ngIf="registerForm.controls['phoneNumber'].errors.maxLength"> More than expected digit</label>
+            </div>
+
+                <!-- Password -->
+                <input type="password" placeholder="Password" formControlName="password" class="form-control"  />
+                        <div *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)" class="alert-danger">
+                            <label *ngIf="registerForm.controls['password'].errors.required">Password is required</label>
+                            <label *ngIf="registerForm.controls['password'].errors.minlength">Password must be at least 6 characters</label>
+                        </div>
+                
+
+                <!-- //Confirm Password -->
+                <input type="password" placeholder="Confirm password" formControlName="confirmPassword" class="form-control" />
+                        <div *ngIf="registerForm.controls['confirmPassword'].invalid && (registerForm.controls['confirmPassword'].dirty || registerForm.controls['confirmPassword'].touched)" class="alert-danger">
+                            <label *ngIf="registerForm.controls['confirmPassword'].errors.required">Confirm Password is required</label>
+                            <label *ngIf="registerForm.controls['confirmPassword'].errors.mustMatch">Passwords must match</label>
+                        </div>
+              
+                <!-- Submit Button -->
+                <input
+                (click)="register()"
+                class="registerbtn"  
+                type="submit" 
+                value = "Register"
+               
+                 >
+              
+        
+                   
+               
+                <br>
+
+                <p class="h2">Already have an account? <a routerLink = "/sign-in">Sign in</a></p>   
+
+
+        </form> <!-- Form ends -->
+    </div>
+
+    <!-- "fullName.value, email.value, phoneNumber.value, password.value, confirmPassword.value -->
+    <!-- [disabled] = "registerForm.pristine || registerForm.invalid"   -->
